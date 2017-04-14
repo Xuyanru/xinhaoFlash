@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 30px;
+				height:28px;
+				margin:0 auto;
+				position: relative;
+			}
+			#main img{
+				position: absolute;
+				top:0;
+				left: 0;
+			}
+			#main img.item2,#main img.item3,#main img.item4{
+				opacity: 0;
+			}
+			#main .item1{
+				animation:2s item1Move infinite;
+			}
+			#main .item2{
+				animation:2s item2Move infinite;
+			}
+			#main .item3{
+				animation:2s item3Move infinite;
+			}
+			#main .item4{
+				animation:2s item4Move infinite;
+			}
+			
+			@keyframes item1Move
+				{
+				0%{opacity:1;}
+				30%{opacity:1;}
+				50%{opacity:0;}
+				75%{opacity:0;}
+				100%{opacity:0;}
+				}
+				
+			@-webkit-keyframes item1Move/*Safari and Chrome*/
+				{
+				0%{opacity:1;}
+				30%{opacity:1;}
+				50%{opacity:0;}
+				75%{opacity:0;}
+				100%{opacity:0;}
+				}
+			@keyframes item2Move
+				{
+				0%{opacity:0;}
+				30%{opacity:0;}
+				50%{opacity:1;}
+				75%{opacity:0;}
+				100%{opacity:0;}
+				}
+				
+			@-webkit-keyframes item2Move/*Safari and Chrome*/
+				{
+				0%{opacity:0;}
+				30%{opacity:0;}
+				50%{opacity:1;}
+				75%{opacity:0;}
+				100%{opacity:0;}
+				}
+				@keyframes item3Move
+				{
+				0%{opacity:0;}
+				50%{opacity:0;}
+				75%{opacity:1;}
+				100%{opacity:0;}
+				}
+				
+			@-webkit-keyframes item3Move/*Safari and Chrome*/
+				{
+				0%{opacity:0;}
+				50%{opacity:0;}
+				75%{opacity:1;}
+				100%{opacity:0;}
+				}
+				@keyframes item4Move
+				{
+				0%{opacity:0;}
+				50%{opacity:0;}
+				75%{opacity:0;}
+				100%{opacity:1;}
+				}
+				
+			@-webkit-keyframes item4Move/*Safari and Chrome*/
+				{
+				0%{opacity:0;}
+				50%{opacity:0;}
+				75%{opacity:0;}
+				100%{opacity:4;}
+				}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<img class="item1" src="img/xinhao0.png" alt="" />
+			<img class="item2" src="img/xinhao1.png" alt="" />
+			<img class="item3" src="img/xinhao2.png" alt="" />
+			<img class="item4" src="img/xinhao3.png" alt="" />
+		</div>
+	</body>
+</html>
